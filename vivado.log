@@ -1,0 +1,68 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Tue Sep 22 14:23:02 2026
+# Process ID: 2804
+# Current directory: C:/Users/prave/SOLAR_PANELS
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent2416 C:\Users\prave\SOLAR_PANELS\SOLAR_PANELS.xpr
+# Log file: C:/Users/prave/SOLAR_PANELS/vivado.log
+# Journal file: C:/Users/prave/SOLAR_PANELS\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/prave/SOLAR_PANELS/SOLAR_PANELS.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2017.4/data/ip'.
+open_project: Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 823.984 ; gain = 104.539
+update_compile_order -fileset sources_1
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7a35tftg256-1
+Top: SOLAR_PANEL
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 963.789 ; gain = 108.270
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'SOLAR_PANEL' [C:/Users/prave/SOLAR_PANELS/SOLAR_PANELS.srcs/sources_1/new/SOLAR_PANEL.v:59]
+INFO: [Synth 8-638] synthesizing module 'ldrsensor' [C:/Users/prave/SOLAR_PANELS/SOLAR_PANELS.srcs/sources_1/new/SOLAR_PANEL.v:3]
+INFO: [Synth 8-256] done synthesizing module 'ldrsensor' (1#1) [C:/Users/prave/SOLAR_PANELS/SOLAR_PANELS.srcs/sources_1/new/SOLAR_PANEL.v:3]
+INFO: [Synth 8-638] synthesizing module 'rainsensor' [C:/Users/prave/SOLAR_PANELS/SOLAR_PANELS.srcs/sources_1/new/SOLAR_PANEL.v:21]
+INFO: [Synth 8-256] done synthesizing module 'rainsensor' (2#1) [C:/Users/prave/SOLAR_PANELS/SOLAR_PANELS.srcs/sources_1/new/SOLAR_PANEL.v:21]
+INFO: [Synth 8-638] synthesizing module 'servo_motor' [C:/Users/prave/SOLAR_PANELS/SOLAR_PANELS.srcs/sources_1/new/SOLAR_PANEL.v:39]
+	Parameter pwm_period bound to: 1000000 - type: integer 
+	Parameter pulse_0 bound to: 50000 - type: integer 
+	Parameter pulse_180 bound to: 75000 - type: integer 
+WARNING: [Synth 8-5788] Register pulse_width_reg in module servo_motor is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/prave/SOLAR_PANELS/SOLAR_PANELS.srcs/sources_1/new/SOLAR_PANEL.v:52]
+INFO: [Synth 8-256] done synthesizing module 'servo_motor' (3#1) [C:/Users/prave/SOLAR_PANELS/SOLAR_PANELS.srcs/sources_1/new/SOLAR_PANEL.v:39]
+INFO: [Synth 8-256] done synthesizing module 'SOLAR_PANEL' (4#1) [C:/Users/prave/SOLAR_PANELS/SOLAR_PANELS.srcs/sources_1/new/SOLAR_PANEL.v:59]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1003.258 ; gain = 147.738
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1003.258 ; gain = 147.738
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a35tftg256-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:13 ; elapsed = 00:00:11 . Memory (MB): peak = 1327.824 ; gain = 472.305
+12 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:13 ; elapsed = 00:00:11 . Memory (MB): peak = 1327.824 ; gain = 472.305
